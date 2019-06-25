@@ -15,8 +15,8 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 
 fn main() {
-    let a = parse_i32(get_input());
-    let b = parse_i32(get_input());
+    let a: i32 = parse_i32(get_input());
+    let b: i32 = parse_i32(get_input());
 
     println!("X = {}", add(a, b));
 }
