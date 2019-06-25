@@ -6,17 +6,17 @@ fn get_input() -> String {
     input
 }
 
-fn parse_i32(string: String) -> i32 {
+fn parse_f64(string: String) -> f64 {
     string.trim().parse().unwrap_or(0)
 }
 
-pub fn get_simple_product(a: i32, b: i32) -> i32 {
+pub fn get_simple_product(a: f64, b: f64) -> f64 {
     a * b
 }
 
 fn main() {
-    let a: i32 = parse_i32(get_input());
-    let b: i32 = parse_i32(get_input());
+    let a: f64 = parse_f64(get_input());
+    let b: f64 = parse_f64(get_input());
 
-    println!("PROD = {}", get_simple_product(a, b));
+    println!("MEDIA = {:.5}", get_simple_product(a, b));
 }
