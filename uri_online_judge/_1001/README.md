@@ -14,6 +14,7 @@ Saída
 Imprima a mensagem "X = " (letra X maiúscula) seguido pelo valor da variável X e pelo final de linha. Cuide para que tenha um espaço antes e depois do sinal de igualdade, conforme o exemplo abaixo.
 
 Exemplos de Entrada	Exemplos de Saída
+
 10 + 9 | X = 19
 
 -10 + 4 | X = -6
