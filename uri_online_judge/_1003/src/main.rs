@@ -6,16 +6,17 @@ fn get_input() -> String {
     input
 }
 
-fn parse_f64(string: String) -> f64 {
-    string.trim().parse().unwrap_or(0.0)
+fn parse_i32(string: String) -> i32 {
+    string.trim().parse().unwrap_or(0)
 }
 
-pub fn get_circumference(a: f64) -> f64 {
-    3.14159 * a * a
+pub fn add(a: i32, b: i32) -> i32 {
+    a + b
 }
 
 fn main() {
-    let a: f64 = parse_f64(get_input());
+    let a: i32 = parse_i32(get_input());
+    let b: i32 = parse_i32(get_input());
 
-    println!("A = {:.4}", get_circumference(a));
+    println!("X = {}", add(a, b));
 }
